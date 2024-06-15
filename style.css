@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #111524;
+    color: whitesmoke ;
+}
+
+
+#sidebar{
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    background-color: #15192b; /*palevioletred;*/
+    display: flex; /*makediv flex to centerise items*/
+    align-items: center; /*y-axis*/
+    justify-content: space-around; /*x-axis*/
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+#sidebar:hover{
+    width: 16%;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+
+}
+
+
+#sidebar button{
+    display: block; /* Stack links vertically */
+    background-color: white;
+    border-radius: 50%;
+    width: 7vh;
+    height: 7vh;
+    transition: all 0.3s ease;
+    margin: 50%, auto;
+    text-decoration: none; 
+}
+
+#top{
+    margin-top: 50%;
+}
+
+#bottom{
+    margin-bottom: 50%;
+}
+
+#sidebar button:hover{
+    width: 9vh;
+    height: 9vh;
+}
+
+#business_card{
+    height: 100vh;
+    display: grid;
+    width: 75%;
+    padding-left: 6%;
+    float: right;
+    font-size: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 5vh);
+    padding-top: 20%;
+}
+
+img{
+    height: 27vh;
+    width: 27vh;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 10%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+#business_card h1{
+    grid-row: 2/3;
+    grid-column: 1;
+}
+
+#business_card h3{
+    margin-top: 2%;
+    grid-row: 4/5;
+    grid-column: 1;
+}
+
+#business_card h4{
+    margin-top: 3%;
+    grid-row: 5/6;
+    grid-column: 1;
+}
+
+#about{
+    width: 75%;
+    padding-left: 15%;
+    float: right;
+}
+
+#projects{
+    width: 75%;
+    padding-left: 15%;
+    float: right;
+}
+
+#experience{
+    width: 75%;
+    padding-left: 15%;
+    float: right;
+}
+
+
+
+/*h1.details{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5em;
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+h3.details{
+    margin-top: 0;
+    font-size: 2em;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+h4.details{
+    margin-top: 0;
+    font-size: 2em;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+#business_card img{
+    height: 200px;;
+    width: 200px;
+    grid-column: 3/4;
+    grid-row: 1/4;
+}*/
